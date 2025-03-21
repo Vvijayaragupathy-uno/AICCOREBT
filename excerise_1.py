@@ -280,31 +280,61 @@ def exercise1():
                         
                         # If we're still comparing and this model doesn't have a response yet
                         if st.session_state.is_comparing and model not in st.session_state.model_responses:
-                    
+                            #
                             try:
-                                # Initialize Groq client
-                                client = Groq(api_key=groq_key)
-                                
-                                # Prepare messages
-                                messages = [{"role": "system", "content": "You are a helpful assistant."}]
-                                
-                                # Add uploaded document if available
-                                if st.session_state.uploaded_file_content:
-                                    messages.append({"role": "user", "content": f"Please use this information as context: {st.session_state.uploaded_file_content}"})
-                                
-                                # Add the scenario/question
-                                messages.append({"role": "user", "content": st.session_state.selected_scenario})
-                                
-                                # Make API call
-                                response = client.chat.completions.create(
-                                    model=model,
-                                    messages=messages,
-                                    max_tokens=st.session_state.max_tokens,
-                                    temperature=st.session_state.temperature
-                                )
-                                
-                                # Store the response
-                                st.session_state.model_responses[model] = response.choices[0].message.content
+                                # Determine which API to use based on the model
+                                if model == "gemini-2.0-flash":
+                                    # Initialize Google Genai client
+                                    google_client = genai.Client(api_key=gemini_key)
+                                    
+                                    # Prepare content
+                                    prompt_content = ""
+                                    
+                                    # Add uploaded document if available
+                                    if st.session_state.uploaded_file_content:
+                                        prompt_content += f"Please use this information as context: {st.session_state.uploaded_file_content}\n\n"
+                                    
+                                    # Add the scenario/question
+                                    prompt_content += st.session_state.selected_scenario
+                                    
+                                    # Make API call to Google's Gemini
+                                    generation_config = {
+                                        "max_output_tokens": st.session_state.max_tokens,
+                                        "temperature": st.session_state.temperature
+                                    }
+                                    
+                                    response = google_client.generate_content(
+                                        model="gemini-2.0-flash",
+                                        contents=prompt_content,
+                                        generation_config=generation_config
+                                    )
+                                    
+                                    # Store the response
+                                    st.session_state.model_responses[model] = response.text
+                                else:
+                                    # Use Groq for other models
+                                    client = Groq(api_key=groq_key)
+                                    
+                                    # Prepare messages
+                                    messages = [{"role": "system", "content": "You are a helpful assistant."}]
+                                    
+                                    # Add uploaded document if available
+                                    if st.session_state.uploaded_file_content:
+                                        messages.append({"role": "user", "content": f"Please use this information as context: {st.session_state.uploaded_file_content}"})
+                                    
+                                    # Add the scenario/question
+                                    messages.append({"role": "user", "content": st.session_state.selected_scenario})
+                                    
+                                    # Make API call
+                                    response = client.chat.completions.create(
+                                        model=model,
+                                        messages=messages,
+                                        max_tokens=st.session_state.max_tokens,
+                                        temperature=st.session_state.temperature
+                                    )
+                                    
+                                    # Store the response
+                                    st.session_state.model_responses[model] = response.choices[0].message.content
                                 
                                 # Update session state
                                 if len(st.session_state.model_responses) == len(st.session_state.selected_models):
@@ -316,7 +346,7 @@ def exercise1():
                                 if len(st.session_state.model_responses) == len(st.session_state.selected_models):
                                     st.session_state.is_comparing = False
                                     st.session_state.comparison_complete = True
-                        
+                                                    
                         # Display response if available
                         if model in st.session_state.model_responses:
                             response = st.session_state.model_responses[model]

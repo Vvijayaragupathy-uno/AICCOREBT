@@ -15,5 +15,5 @@ groq
 PyPDF2
 plotly
 python-dotenv
-
+google-generativeai
 
