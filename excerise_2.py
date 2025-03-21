@@ -1161,14 +1161,16 @@ def exercise2():
             st.subheader("Vote for the Best Models")
             
             # Style the form with custom CSS
+            # Update the voting guidelines styling for dark theme
             st.markdown("""
             <style>
             .voting-card {
-                background-color: #f8f9fa;
+                background-color: #2c3e50; /* Dark blue background */
                 border-radius: 10px;
                 padding: 20px;
                 margin-bottom: 20px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                color: #ffffff; /* White text */
             }
             .winner-badge {
                 display: inline-block;
@@ -1180,16 +1182,17 @@ def exercise2():
                 margin-right: 10px;
             }
             .criteria-card {
-                background-color: #e9ecef;
-                border-left: 4px solid #1f77b4;
+                background-color: #1e2b3c; /* Darker blue background */
+                border-left: 4px solid #3498db; /* Blue border */
                 padding: 10px;
                 margin-bottom: 10px;
                 border-radius: 0 4px 4px 0;
+                color: #ffffff; /* White text */
             }
             </style>
             """, unsafe_allow_html=True)
-            
-            # Display voting criteria
+
+            # Display voting guidelines with updated styling
             st.markdown("""
             <div class="voting-card">
                 <h3>Voting Guidelines</h3>
@@ -1197,12 +1200,12 @@ def exercise2():
             </div>
             """, unsafe_allow_html=True)
 
-            # Display each criterion in a separate card using st.markdown instead of raw HTML
+            # Display each criterion in a separate card with dark theme styling
             st.markdown('<div class="criteria-card"><strong>Response Quality:</strong> Which model provided the most accurate and helpful answers?</div>', unsafe_allow_html=True)
             st.markdown('<div class="criteria-card"><strong>Reasoning Ability:</strong> Which model showed the best logical reasoning and step-by-step thinking?</div>', unsafe_allow_html=True)
             st.markdown('<div class="criteria-card"><strong>Clarity:</strong> Which model communicated most clearly and was easiest to understand?</div>', unsafe_allow_html=True)
             st.markdown('<div class="criteria-card"><strong>Completeness:</strong> Which model provided the most comprehensive responses?</div>', unsafe_allow_html=True)
-                        
+            
             with st.form("model_voting_form"):
                 # Get all available models for voting
                 def get_all_available_models():
