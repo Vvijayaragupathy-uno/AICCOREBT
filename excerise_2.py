@@ -1206,6 +1206,8 @@ def exercise2():
             st.markdown('<div class="criteria-card"><strong>Clarity:</strong> Which model communicated most clearly and was easiest to understand?</div>', unsafe_allow_html=True)
             st.markdown('<div class="criteria-card"><strong>Completeness:</strong> Which model provided the most comprehensive responses?</div>', unsafe_allow_html=True)
             
+            # Display the voting form
+            # This code goes in the voting form section of tab4
             with st.form("model_voting_form"):
                 # Get all available models for voting
                 def get_all_available_models():
@@ -1240,13 +1242,14 @@ def exercise2():
                     key="top_model"
                 )
                 
-                # Why this model is the best
-                if top_model:
-                    top_model_reason = st.text_area(
-                        "Why is this model the best?",
-                        placeholder="Explain what made this model stand out...",
-                        key="top_model_reason"
-                    )
+                # Always show the reason field, regardless of model selection
+                # This ensures it appears on page load
+                st.markdown("### Why is this model the best?")
+                top_model_reason = st.text_area(
+                    "Explain what made this model stand out...",
+                    key="top_model_reason",
+                    label_visibility="collapsed"  # Hide the redundant label
+                )
                 
                 # General feedback (optional)
                 st.markdown("### Additional Feedback (Optional)")
@@ -1277,7 +1280,7 @@ def exercise2():
                             'username': st.session_state.username,
                             'scenario': selected_scenario,
                             'voted_model': top_model,
-                            'reason': top_model_reason if 'top_model_reason' in locals() else "",
+                            'reason': top_model_reason,  # Now this will always be defined
                             'feedback': general_feedback
                         }
                         
