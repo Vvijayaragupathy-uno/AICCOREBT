@@ -1481,9 +1481,12 @@ def exercise2():
                         # Convert timestamp to datetime
                         votes_df['timestamp'] = pd.to_datetime(votes_df['timestamp'])
                         
-                        # Add time filter
+                        # Add time filter with additional short-term options
                         time_filter_options = [
                             "All Time",
+                            "Last 5 Minutes",
+                            "Last 10 Minutes",
+                            "Last Hour",
                             "Last Week",
                             "Last Month",
                             "Last 3 Months"
@@ -1498,7 +1501,16 @@ def exercise2():
                         filtered_df = votes_df.copy()
                         current_time = datetime.now()
                         
-                        if selected_time_filter == "Last Week":
+                        if selected_time_filter == "Last 5 Minutes":
+                            five_minutes_ago = current_time - timedelta(minutes=5)
+                            filtered_df = votes_df[votes_df['timestamp'] >= five_minutes_ago]
+                        elif selected_time_filter == "Last 10 Minutes":
+                            ten_minutes_ago = current_time - timedelta(minutes=10)
+                            filtered_df = votes_df[votes_df['timestamp'] >= ten_minutes_ago]
+                        elif selected_time_filter == "Last Hour":
+                            one_hour_ago = current_time - timedelta(hours=1)
+                            filtered_df = votes_df[votes_df['timestamp'] >= one_hour_ago]
+                        elif selected_time_filter == "Last Week":
                             one_week_ago = current_time - timedelta(days=7)
                             filtered_df = votes_df[votes_df['timestamp'] >= one_week_ago]
                         elif selected_time_filter == "Last Month":
