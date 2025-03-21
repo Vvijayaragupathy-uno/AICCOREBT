@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 import  io
 import PyPDF2
 from dotenv import load_dotenv
+from google import genai
 load_dotenv()
 groq_key = os.getenv("GROQ_API_KEY")
 github_key = os.getenv("GITHUB_API_KEY")
