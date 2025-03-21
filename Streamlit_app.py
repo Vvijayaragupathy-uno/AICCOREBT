@@ -4,7 +4,6 @@ from database import UserDatabase
 from dotenv import load_dotenv
 import os
 load_dotenv()
-# Import exercises
 from excerise_1 import exercise1
 from excerise_2 import exercise2
 

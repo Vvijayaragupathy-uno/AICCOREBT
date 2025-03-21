@@ -14,6 +14,7 @@ import  io
 import PyPDF2
 from dotenv import load_dotenv
 import google.generativeai as genai
+
 load_dotenv()
 groq_key = os.getenv("GROQ_API_KEY")
 github_key = os.getenv("GITHUB_API_KEY")
@@ -286,8 +287,8 @@ def exercise1():
                             try:
                                 # Determine which API to use based on the model
                                 if model == "gemini-2.0-flash":
-                                    # Initialize Google Genai client
-                                    google_client = genai.Client(api_key=gemini_key)
+                                    # Configure the Gemini API
+                                    genai.configure(api_key=gemini_key)
                                     
                                     # Prepare content
                                     prompt_content = ""
@@ -299,17 +300,15 @@ def exercise1():
                                     # Add the scenario/question
                                     prompt_content += st.session_state.selected_scenario
                                     
-                                    # Make API call to Google's Gemini
+                                    # Configure the model parameters
                                     generation_config = {
                                         "max_output_tokens": st.session_state.max_tokens,
                                         "temperature": st.session_state.temperature
                                     }
                                     
-                                    response = google_client.generate_content(
-                                        model="gemini-2.0-flash",
-                                        contents=prompt_content,
-                                        generation_config=generation_config
-                                    )
+                                    # Create model instance and generate response
+                                    model_obj = genai.GenerativeModel("gemini-2.0-flash")
+                                    response = model_obj.generate_content(prompt_content, generation_config=generation_config)
                                     
                                     # Store the response
                                     st.session_state.model_responses[model] = response.text
