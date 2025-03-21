@@ -1,0 +1,18 @@
+question,timestamp,model_Zero Shot_llama3-70b-8192,model_Role Based_llama3-70b-8192,model_Chain of Thought_llama3-70b-8192
+llama3-70b-8192 - I want to allow my team to store work emails on their devices for up to three months to reference older communications as per Mobile device management policy. Can you please give yes or no answer?,2025-03-21 01:47:59,YES,NO,"Let's break down the problem step by step!
+
+**Step 1: Understand the request**
+You want to allow your team to store work emails on their devices for up to three months to reference older communications.
+
+**Step 2: Recall the relevant policy**
+You mentioned the Mobile Device Management (MDM) policy. This policy likely outlines the rules and guidelines for managing company data on personal devices.
+
+**Step 3: Evaluate the request against the policy**
+The request is to store work emails on devices for up to three months. This means we need to check if the MDM policy allows for this duration of data storage on personal devices.
+
+**Step 4: Determine the feasibility of the request**
+Since you mentioned the MDM policy, I'll assume it's a existing policy that has been established. In this case, the answer to your question would depend on what the policy specifies.
+
+**Answer: It depends on the MDM policy**
+
+If the MDM policy allows for storing work emails on devices for up to three months, the answer is **YES**. If the policy has stricter guidelines or restrictions, the answer would be **NO**. To give a definitive answer, I would need to know the specific details of your organization's MDM policy."

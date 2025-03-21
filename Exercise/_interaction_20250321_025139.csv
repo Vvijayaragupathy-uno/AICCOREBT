@@ -1,0 +1,8 @@
+question,timestamp,model_Zero Shot_llama3-70b-8192,model_Zero Shot_deepseek-r1-distill-qwen-32b
+Tab2 - Zero Shot - 📂 Data Ownership Scenario,2025-03-21 02:51:39,Yes.,"<think>
+Okay, so the user is asking whether they can let their team store work emails on their devices for up to three months as per their Mobile Device Management policy. They want a yes or no answer. 
+
+I need to consider what MDM policies usually allow. Typically, MDM policies are about managing mobile devices securely. Allowing email storage for a period is common for convenience and reference. So, yes, it's possible to implement such a policy.
+</think>
+
+Yes."

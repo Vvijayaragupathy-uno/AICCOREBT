@@ -1,0 +1,40 @@
+question,timestamp,model_llama3-70b-8192,model_llama-3.2-90b-vision-preview
+"A university IT administrator discovers that a faculty member has installed a custom operating system on their university-provided smartphone. According to best practices aligned with WPI's Mobile Device Management Policy, what should happen next?",2025-03-20 21:27:16,"According to best practices aligned with WPI's Mobile Device Management Policy, here's what should happen next:
+
+**Initial Response**
+
+1. The IT administrator should immediately notify the faculty member that the custom operating system on their university-provided smartphone is not compliant with the university's Mobile Device Management Policy.
+2. The administrator should explain the reasons behind this notification, highlighting the potential security risks associated with using a non-standard operating system on a university-owned device.
+
+**Assessment and Analysis**
+
+1. The IT administrator should conduct a risk assessment to determine the potential impact of the custom operating system on the university's network and data.
+2. They should analyze the device's configuration and identify any potential vulnerabilities or security breaches.
+
+**Device Isolation**
+
+1. To prevent any potential security risks, the IT administrator should isolate the device from the university's network until the issue is resolved.
+2. This may involve remotely wiping the device, disabling its network access, or restricting its access to sensitive university resources.
+
+**Resolution Options**
+
+1. The faculty member should be given the option to restore the device to its original, university-approved operating system.
+2. Alternatively, they may be allowed to use a personal device for university business, but only if it meets the university's minimum security requirements.
+
+**Policy Violation Reporting**
+
+1. The IT administrator should document the incident and report it to the appropriate university authorities, as required by WPI's Mobile Device Management Policy.
+
+**Education and Awareness**
+
+1. The IT administrator should","According to best practices aligned with a typical Mobile Device Management Policy, including WPI's (Worcester Polytechnic Institute's), if a university IT administrator discovers that a faculty member has installed a custom operating system on their university-provided smartphone, the following steps should occur:
+
+1. **Notification to the faculty member**: The IT administrator should notify the faculty member, explaining that the custom operating system is not in compliance with the university's Mobile Device Management Policy. The notification should be clear and concise, outlining the issues and the potential risks associated with the non-standard operating system.
+
+2. **Remove or restore the standard operating system**: The faculty member should be required to either remove the custom operating system and restore the standard operating system provided by the university or return the device to the IT department for restoration. This ensures that the device is returned to a known, secured state.
+
+3. **Review of access to sensitive data**: The IT administrator should review the faculty member's access to sensitive data, such as student records, research data, or other confidential information, to ensure that it has not been compromised due to the non-standard operating system.
+
+4. **Security check**: A thorough security check should be performed on the device to detect and remove any potential malware or vulnerabilities introduced by the custom operating system.
+
+5. **Document the incident**: A record of the incident, including the actions taken, should be documented and kept for future reference. This helps the university track and analyze any similar incidents that may occur"

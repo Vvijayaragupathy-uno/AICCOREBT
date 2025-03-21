@@ -1,0 +1,9 @@
+question,timestamp,model_Zero Shot_llama3-70b-8192,model_Zero Shot_llama-3.2-90b-vision-preview,model_Zero Shot_deepseek-r1-distill-qwen-32b,model_Zero Shot_qwen-2.5-32b
+Tab2 - Zero Shot - 🔒 Security Breach Protocol,2025-03-20 20:54:43,YES,Yes.,"<think>
+Okay, so I'm trying to figure out whether the employee's mobile device is compromised based on the symptoms described. Let me break this down step by step.
+
+First, the device is showing increased battery usage. Hmm, that's a bit concerning because when a device uses more battery than usual, it could mean that something is running in the background that's draining the battery. But wait, could there be other reasons for increased battery usage? Maybe the employee is using the device more than usual, or maybe it's just the device's normal behavior depending on usage patterns. So, alone, increased battery usage isn't a sure sign of compromise, but it's a red flag.
+
+Next, the device is initiating several connections to various IP addresses. That's another point. Normally, when you use your phone, it connects to known servers for emails, app updates, etc. But if it's connecting to a bunch of unfamiliar IPs, that could be a sign that something malicious is reaching out to command-and-control servers or downloading data elsewhere. This seems more indicative of a compromised device because legitimate apps usually have a limited set of IPs they connect to, so multiple unknown connections could be malicious.
+
+Then, there are some unfamiliar apps installed on the device. Unfamiliar apps could mean a few things. It might be that the employee downloaded something by accident, or perhaps it's malware that installed itself without the user's knowledge. Malware often installs additional apps to hide its presence or to carry",Yes

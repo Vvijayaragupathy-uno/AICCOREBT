@@ -1,0 +1,2 @@
+question,timestamp,model_Zero Shot_llama3-70b-8192
+llama3-70b-8192 - An employee's mobile device starts exhibiting. The device shows increased battery usage. It initiates several connections to various IP addresses. Some unfamiliar apps appear to be installed. Does this device show clear evidence of being compromised? Can you give the response as only no or yes?,2025-03-21 03:26:59,YES

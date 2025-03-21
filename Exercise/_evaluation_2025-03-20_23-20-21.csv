@@ -1,0 +1,9 @@
+,Accuracy,Reasoning Quality,Completeness,Clarity,Response Time,timestamp,scenario,notes
+model_allam-2-7b,4.0,3.0,4.0,4.0,4.0,,,
+model_gemma2-9b-it,3.0,3.0,3.0,3.0,3.0,,,
+model_llama3-70b-8192,3.0,3.0,3.0,3.0,3.0,,,
+model_qwen-2.5-32b,3.0,3.0,3.0,3.0,3.0,,,
+model_llama-3.2-90b-vision-preview,3.0,3.0,3.0,3.0,3.0,,,
+model_deepseek-r1-distill-qwen-32b,3.0,3.0,3.0,3.0,3.0,,,
+model_mistral-saba-24b,3.0,3.0,3.0,3.0,3.0,,,
+metadata,,,,,,2025-03-20_23-20-21,📱 Mobile Security Policy,allen is good

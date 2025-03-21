@@ -1,0 +1,4 @@
+,Accuracy,Reasoning Quality,Completeness,Clarity,Response Time,timestamp,scenario,notes
+model_allam-2-7b,4.0,3.0,4.0,4.0,4.0,,,
+model_gemma2-9b-it,3.0,3.0,3.0,3.0,3.0,,,
+metadata,,,,,,2025-03-20_23-22-53,📂 Data Ownership Scenario,allen is good

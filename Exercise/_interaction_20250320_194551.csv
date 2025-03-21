@@ -1,0 +1,4 @@
+question,timestamp,model_Few Shot_qwen-2.5-32b,model_Role Based_qwen-2.5-32b
+qwen-2.5-32b - I want to allow my team to store work emails on their devices for up to three months to reference older communications as per Mobile device management policy. Can you please give yes or no answer?,2025-03-20 19:45:51,"Answer: No. 
+
+Generally, retaining work emails or any sensitive data on personal devices for an extended period goes against most Mobile Device Management (MDM) policies and data security best practices, as it increases the risk of data breaches and unauthorized access.",No

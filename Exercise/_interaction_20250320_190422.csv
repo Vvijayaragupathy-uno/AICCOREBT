@@ -1,0 +1,11 @@
+question,timestamp,model_llama3-70b-8192
+"A university IT administrator discovers that a faculty member has installed a custom operating system on their university-provided smartphone. According to best practices aligned with WPI's Mobile Device Management Policy, what should happen next?",2025-03-20 19:04:22,"According to best practices aligned with WPI's Mobile Device Management Policy, here's what should happen next:
+
+1. **Notification and Awareness**: The IT administrator should notify the faculty member that they have detected a custom operating system on their university-provided smartphone, which is not compliant with the university's Mobile Device Management Policy.
+2. **Explanation of Risks**: The IT administrator should explain the risks associated with using a custom operating system, such as potential security vulnerabilities, compatibility issues with university systems, and the potential for data breaches or loss.
+3. **Request for Compliance**: The IT administrator should request that the faculty member remove the custom operating system and install the approved, university-managed operating system on their smartphone. This is to ensure the device meets the university's security standards and can be managed accordingly.
+4. **Deadline for Compliance**: A reasonable deadline should be provided to the faculty member to remove the custom operating system and install the approved operating system.
+5. **Consequences of Non-Compliance**: If the faculty member fails to comply with the request, the IT administrator may need to take further action, such as restricting access to university systems or resources, or even remotely wiping the device to protect university data.
+6. **Documentation and Follow-up**: The IT administrator should document the entire process, including the notification, explanation, and any subsequent actions taken. A follow-up should be scheduled to ensure the faculty member has complied with the request and to provide any necessary support.
+
+By following these steps"

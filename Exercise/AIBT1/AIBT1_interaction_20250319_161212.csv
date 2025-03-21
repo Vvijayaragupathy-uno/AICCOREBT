@@ -1,0 +1,7 @@
+question,timestamp,model_llama3-70b-8192,model_mixtral-8x7b-32768
+"A university IT administrator discovers that a faculty member has installed a custom operating system on their university-provided smartphone. According to best practices aligned with WPI's Mobile Device Management Policy, what should happen next?",2025-03-19 16:12:12,"Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-70b-8192` in organization `org_01jnywv10ye3ebaxaz6xmq09y9` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 48309, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}","
+
+
+ZrDd Zi
+/Filter/FlateDecode/ID[<565E2F62B36C14498BE719D75661B9DE><5F714BD5A0D4B74EA6397CA3B6EF1767>]/Index[150 33]/Info 142 0 R/Length 556/Prev 158002/Root 144 0 R/Size 165/Subtype/XRef/W[1 3 1]>>stream
+q0L*``br`0022333534313730353233303036333730343238363130323239333135383532323832383731363031313734333631363235323531343131343235323135383133333"

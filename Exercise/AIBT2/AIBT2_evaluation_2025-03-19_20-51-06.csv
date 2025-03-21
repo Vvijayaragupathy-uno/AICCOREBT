@@ -1,0 +1,4 @@
+,Accuracy,Reasoning Quality,Completeness,Clarity,Response Time,timestamp
+model_llama3-70b-8192,2.0,4.0,1.0,3.0,3.0,
+model_mixtral-8x7b-32768,3.0,3.0,2.0,0.0,0.0,
+metadata,,,,,,2025-03-19_20-51-06
