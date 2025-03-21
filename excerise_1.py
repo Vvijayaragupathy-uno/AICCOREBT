@@ -16,6 +16,7 @@ from dotenv import load_dotenv
 load_dotenv()
 groq_key = os.getenv("GROQ_API_KEY")
 github_key = os.getenv("GITHUB_API_KEY")
+gemini_key = os.getenv("GEMINI_API_KEY")
 def exercise1():
     # Initialize the user database
     user_db = UserDatabase()
@@ -45,7 +46,7 @@ def exercise1():
     st.write("compare the lllm models")
     # Available LLM models
     llm_models = [
-        "llama3-70b-8192", "gemma2-9b-it", "llama-3.2-90b-vision-preview", "qwen-2.5-32b",
+        "gemini-2.0-flash","llama3-70b-8192", "gemma2-9b-it", "llama-3.2-90b-vision-preview", "qwen-2.5-32b",
         "deepseek-r1-distill-qwen-32b", "allam-2-7b","mistral-saba-24b"
     ]
     
